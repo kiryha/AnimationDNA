@@ -1,0 +1,53 @@
+{
+    "ASSETS": {
+        "eda": {
+            "nycLight": {
+                "RIG": "NYC/EDA/RIG/RIG_nycLight_001.mb", 
+                "GEO": "NYC/EDA/GEO/GEO_nycLight_001.mb"
+            }
+        }, 
+        "environments": {
+            "NYC": {
+                "EDA": "nycLight", 
+                "GEO": "ENV_NYC_001.mb", 
+                "MAT": "MAT_NYC_001.mb"
+            }
+        }, 
+        "characters": {
+            "BENDER": {
+                "RIG": "RIG_BENDER_000.mb", 
+                "GEO": "GEO_BENDER_000.mb", 
+                "MAT": "MAT_BENDER_001.mb"
+            }
+        }, 
+        "props": {
+            "fooTalisker": {
+                "RIG": "FOOD/RIG/RIG_fooTalisker_001.mb", 
+                "GEO": "FOOD/GEO/GEO_fooTalisker_001.mb"
+            }, 
+            "fooApple": {
+                "RIG": "FOOD/RIG/RIG_fooApple_001.mb", 
+                "GEO": "FOOD/GEO/GEO_fooApple_002.mb"
+            }
+        }
+    }, 
+    "SHOTS": {
+        "REEL_01": {
+            "010": {
+                "SHOT_010": {
+                    "endFrame": "200", 
+                    "EXR": "v001/E010_S010_001.%04d.exr", 
+                    "characters": "BENDER", 
+                    "environments": "NYC", 
+                    "props": "fooTalisker fooApple"
+                }, 
+                "SHOT_020": {
+                    "endFrame": "200", 
+                    "characters": "BENDER", 
+                    "environments": "NYC", 
+                    "props": "grsTalisker"
+                }
+            }
+        }
+    }
+}

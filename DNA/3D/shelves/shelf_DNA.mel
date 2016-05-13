@@ -1,0 +1,242 @@
+global proc shelf_DNA () {
+    global string $gBuffStr;
+    global string $gBuffStr0;
+    global string $gBuffStr1;
+
+
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "#ATM\n# Attribute manager\nimport attrManager\nreload(attrManager)\nattrManager.baseUI()\n" 
+        -enableBackground 0
+        -align "center" 
+        -label "Attribute manager" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "P:/TANNER/PROD/3D/scripts/DNA/icons/dnaATM.jpg" 
+        -image1 "P:/TANNER/PROD/3D/scripts/DNA/icons/dnaATM.jpg" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "#ATM\n# Attribute manager\nimport attrManager\nreload(attrManager)\nattrManager.baseUI()\n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "# ASM\n# Asset manager\nimport assetManager\nassetManager.baseUI()\n" 
+        -enableBackground 0
+        -align "center" 
+        -label "Asset manager" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "P:/TANNER/PROD/3D/scripts/DNA/icons/dnaASM.jpg" 
+        -image1 "P:/TANNER/PROD/3D/scripts/DNA/icons/dnaASM.jpg" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "# ASM\n# Asset manager\nimport assetManager\nreload(assetManager)\nassetManager.baseUI()\n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Shot assembler" 
+        -enableBackground 0
+        -align "center" 
+        -label "Shot assembler" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "P:/TANNER/PROD/3D/scripts/DNA/icons/dnaSHA.jpg" 
+        -image1 "P:/TANNER/PROD/3D/scripts/DNA/icons/dnaSHA.jpg" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "# SHA\n# Shot assembler\nimport shotAssembler\nreload(shotAssembler)\nshotAssembler.baseUI()" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "animation manager" 
+        -enableBackground 0
+        -align "center" 
+        -label "animation manager" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "P:/TANNER/PROD/3D/scripts/DNA/icons/dnaANM.jpg" 
+        -image1 "P:/TANNER/PROD/3D/scripts/DNA/icons/dnaANM.jpg" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "#ANM\n# animation manager\nimport animManager\nreload(animManager)\nanimManager.baseUI()\n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "# EXP\n# Export Animation\nimport exportABC\nreload(exportABC)\nexportABC.exportABCUI()\n" 
+        -enableBackground 0
+        -align "center" 
+        -label "Export Animation" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "P:/TANNER/PROD/3D/scripts/DNA/icons/dnaEXP.jpg" 
+        -image1 "P:/TANNER/PROD/3D/scripts/DNA/icons/dnaEXP.jpg" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "# EXP\n# Export Animation\nimport exportABC\nreload(exportABC)\nexportABC.exportABCUI()\n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "# IMP\n# Import Animation\nimport importABC\nreload(importABC)\nimportABC.importABCUI()" 
+        -enableBackground 0
+        -align "center" 
+        -label " Import Animation" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.25 
+        -image "P:/TANNER/PROD/3D/scripts/DNA/icons/dnaIMP.jpg" 
+        -image1 "P:/TANNER/PROD/3D/scripts/DNA/icons/dnaIMP.jpg" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "# IMP\n# Import Animation\nimport importABC\nreload(importABC)\nimportABC.importABCUI()" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Render manager" 
+        -enableBackground 0
+        -align "center" 
+        -label "Render manager" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "P:/TANNER/PROD/3D/scripts/DNA/icons/dnaRND.jpg" 
+        -image1 "P:/TANNER/PROD/3D/scripts/DNA/icons/dnaRND.jpg" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "# RND\n# Render manager\nimport renderManager\nreload(renderManager)\nrenderManager.baseUI()" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "data publisher" 
+        -enableBackground 0
+        -align "center" 
+        -label "Asset publisher" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "P:/TANNER/PROD/3D/scripts/DNA/icons/dnaPUB.jpg" 
+        -image1 "P:/TANNER/PROD/3D/scripts/DNA/icons/dnaPUB.jpg" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "# PUB\n# Publish asset\nimport dataPublisher\nreload(dataPublisher)\ndataPublisher.baseUI()" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "save next version of current scene\n" 
+        -enableBackground 0
+        -align "center" 
+        -label "save next version of current scene\n" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "P:/TANNER/PROD/3D/scripts/DNA/icons/dnaSNV.jpg" 
+        -image1 "P:/TANNER/PROD/3D/scripts/DNA/icons/dnaSNV.jpg" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "#SNV\n# save next version of current scene\nfrom dnaCore import *\nSNV()" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+} 

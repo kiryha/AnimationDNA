@@ -1,0 +1,2 @@
+print "<<  userSetup.mel: RUNNING setupMaya.py  >>\n";
+python("import setupMaya");
