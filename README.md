@@ -6,3 +6,5 @@ In other words, **Animation DNA is out of the box pipeline** for animation studi
 Materially **on HDD Animation DNA** represented as a winrar archive [DNA.rar](https://github.com/kiryha/AnimationDNA/wiki/02-Codex-DNA#dna-archive)
 
 Refer to [Animation DNA documentation](https://github.com/kiryha/AnimationDNA/wiki) to start using it.
+
+Visit [Animation DNA blog](http://kiryha.blogspot.com/2016/03/animation-dna.html)
