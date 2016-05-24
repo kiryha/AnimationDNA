@@ -1,5 +1,5 @@
-# ANIMATION DNA 2.0 
-# FTrack EDITION
+# 256 pipeline tools
+# NO FTRACK EDITION
 # Setup Maya Settings
 # This file runs from userSetup.mel 
 
@@ -10,4 +10,4 @@ from setupProject import *
 print '<<  setupMaya [ projectName ]: {0}  >>'.format(projectName)
 
 # Set project in Maya
-pm.mel.eval(' setProject "{0}PROD/3D/"'.format(rootProject)) 
+pm.mel.eval(' setProject "{0}PROD/3D/"'.format(projectRoot)) 
