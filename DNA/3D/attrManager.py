@@ -1,5 +1,6 @@
 # 256 pipeline tools
 # ATTRIBUTES MANAGER
+# NO FTRACK EDITION
 # create, set and delete custom attributes on objects shapes
 import pymel.core as pm
 
