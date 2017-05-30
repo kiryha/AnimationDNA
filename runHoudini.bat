@@ -1,0 +1,1 @@
+"C:\Program Files\Autodesk\Maya2017\bin\mayapy.exe" %cd%\runHoudini.py
