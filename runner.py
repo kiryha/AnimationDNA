@@ -3,15 +3,19 @@
 #      mail: zclongpop123@163.com
 #      time: Wed Apr 25 17:00:25 2018
 #========================================
-import os, re, subprocess
+import sys, os, re, subprocess
+import fire
 #--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+spliter = {'win32':';', 'linux2':':', 'darwin':':'}
+
 class Runner(object):
     '''
     '''
-    def __init__(self):
+    def __init__(self, batch_mode=False):
         '''
         '''
-        self.__env = os.environ.copy()
+        self.__mode = batch_mode
+        self.__env  = os.environ.copy()
 
 
 
@@ -23,10 +27,10 @@ class Runner(object):
             self.__env[name] = value
 
         elif mode == 'pre':
-            self.__env[name] = '{0};{1}'.format(value, self.__env.get(name, ''))
+            self.__env[name] = '{0}{1}{2}'.format(value, spliter[sys.platform], self.__env.get(name, ''))
 
         elif mode == 'post':
-            self.__env[name] = '{0};{1}'.format(self.__env.get(name, ''), value)
+            self.__env[name] = '{0}{1}{2}'.format(self.__env.get(name, ''), spliter[sys.platform], value)
 
 
 
@@ -36,7 +40,10 @@ class Runner(object):
         '''
         _cmds = [executable]
         _cmds.extend(argments)
-        subprocess.Popen(_cmds, env=self.__env)
+        if self.__mode:
+            subprocess.check_call(_cmds, env=self.__env)
+        else:
+            subprocess.Popen(_cmds, env=self.__env)
 
 
 
