@@ -26,7 +26,7 @@ class Runner(object):
             self.__env[name] = '{0};{1}'.format(value, self.__env.get(name, ''))
 
         elif mode == 'post':
-            self.__env[name] = '{0};{1}'.format(self.__env.get(name, '', value))
+            self.__env[name] = '{0};{1}'.format(self.__env.get(name, ''), value)
 
 
 
