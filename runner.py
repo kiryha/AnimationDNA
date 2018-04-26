@@ -3,9 +3,9 @@
 #      mail: zclongpop123@163.com
 #      time: Wed Apr 25 17:00:25 2018
 #========================================
-import sys, os, re, subprocess
-import fire
+import sys, os, subprocess
 #--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+
 spliter = {'win32':';', 'linux2':':', 'darwin':':'}
 
 class Runner(object):
@@ -27,10 +27,10 @@ class Runner(object):
             self.__env[name] = value
 
         elif mode == 'pre':
-            self.__env[name] = '{0}{1}{2}'.format(value, spliter[sys.platform], self.__env.get(name, ''))
+            self.__env[name] = '{0}{1}{2}'.format(value, spliter.get(sys.platform, ':'), self.__env.get(name, ''))
 
         elif mode == 'post':
-            self.__env[name] = '{0}{1}{2}'.format(self.__env.get(name, ''), spliter[sys.platform], value)
+            self.__env[name] = '{0}{1}{2}'.format(self.__env.get(name, ''), spliter.get(sys.platform, ':'), value)
 
 
 
@@ -49,6 +49,6 @@ class Runner(object):
 
 
 if __name__ == '__main__':
-    runner = Runner()
-    runner.put_env('MAYA_UI_LANGUAGE', 'en_US')
+    runner = Runner(batch_mode=True)
+    runner.put_env('MAYA_UI_LANGUAGE', 'zh_CN')
     runner.run('C:/Program Files/Autodesk/Maya2017/bin/maya.exe')
